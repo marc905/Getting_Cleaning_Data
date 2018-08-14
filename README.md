@@ -1,5 +1,6 @@
 # Peer-graded Assignment: Getting and Cleaning Data Course Project
 
+#Instructions
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit: 
   1) a tidy data set as described below, 
   2) a link to a Github repository with your script for performing the analysis, and 
@@ -21,3 +22,8 @@ You should create one R script called run_analysis.R that does the following.
 3) Uses descriptive activity names to name the activities in the data set
 4) Appropriately labels the data set with descriptive variable names.
 5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+Methodology
+1) All files are downloaded manually to a working directory and unzipped.  The user then sets their working directory to match.
+2) Script will then read in the column names for the data set (features.txt) and each of the relevant files from the train and test folders.
+3) Test and training data is merged via rbind
