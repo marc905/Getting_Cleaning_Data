@@ -23,7 +23,10 @@ You should create one R script called run_analysis.R that does the following.
 4) Appropriately labels the data set with descriptive variable names.
 5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Methodology
-1) All files are downloaded manually to a working directory and unzipped.  The user then sets their working directory to match.
+My Methodology - May be executed automatically by executing the run_analysis.R script.
+1) All files are downloaded manually to a working directory and unzipped.  
 2) Script will then read in the column names for the data set (features.txt) and each of the relevant files from the train and test folders.
 3) Test and training data is merged via rbind
+4) All measures of format mean() or std() are retained and other measures are dropped.
+5) Data set is appropriately relabled to include more descriptive titles
+6) Tidy data set is created for submission.
